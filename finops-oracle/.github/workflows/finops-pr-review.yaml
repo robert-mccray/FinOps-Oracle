@@ -1,0 +1,21 @@
+name: FinOps Oracle PR Review
+on: [pull_request]
+
+jobs:
+  cost-analysis:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Setup Infracost
+        uses: infracost/actions/setup@v2
+        with:
+          api-key: ${{ secrets.INFRACOST_API_KEY }}
+          
+      - name: Generate Infracost JSON
+        run: infracost breakdown --path example-terraform --format json --out-file cost.json
+        
+      - name: Run AI FinOps Oracle
+        run: |
+          pip install requests
+          python scripts/finops_oracle.py

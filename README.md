@@ -1,0 +1,2 @@
+# 💰 FinOps Oracle (AI-Powered IaC Review)
+An automated CI/CD gatekeeper that intercepts Terraform Pull Requests, calculates the financial impact using `Infracost`, and leverages an LLM to recommend cheaper, mathematically optimized cloud instances before code is merged. Proactively prevents cloud waste in enterprise environments.
