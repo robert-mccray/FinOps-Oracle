@@ -1,15 +1,3 @@
-This repository, FinOps-Oracle, is the exact embodiment of your "Shift-Left FinOps" philosophy.
-
-When the interview panel asks, "How do you balance innovation with budget constraints?" this repo proves you don't just ask engineers to "spend less." You build automated guardrails that make cost-efficiency the default state.
-
-Here is the playbook for Repo #5:
-
-Upload the FinOps/CI-CD architecture diagram from your portfolio into this repository's root folder and name it architecture-diagram.png.
-
-Replace the current README.md with the executive code block below.
-
-📋 Copy-Paste This for FinOps-Oracle README.md
-Markdown
 # 💰 FinOps Oracle: AI-Powered IaC Cost Guardrail
 
 Cloud waste happens at the pull request, not the invoice. If you are waiting for the monthly AWS or Azure bill to see what you spent, the budget is already blown.
